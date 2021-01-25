@@ -1,5 +1,76 @@
+/*body {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    overflow: hidden;*/
+/*}*/
+
+.header {
+    position: relative;
+    background: url("../assets/images/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Old browsers */
+    background-color: linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));
+    /* FF3.6-15 */
+    background-image: -moz-linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));
+    /* Chrome10-25,Safari5.1-6 */
+    background-image: -webkit-linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-image: linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));
+    /*z-index: 1;*/
+}
 .header-menu {
+    z-index: 2;
+    margin: 0 auto;
+    /*text-align: center;*/
+    line-height: 110px;
+    color: white;
+}
+
+.header-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.center-container {
     display: flex;
-    justify-content: space-between;
-    height: 110px;
+    justify-content: center;
+}
+
+.left-container, .center-container, .right-container, .title-cont {
+    z-index: 999;
+}
+
+.anchor {
+    padding: 0 10px;
+}
+
+.right-container {
+    text-align: end;
+}
+
+.title-cont {
+    color: white;
+    height: calc(100vh - 110px);
+    vertical-align: middle;
+    position: relative;
+    display: table-cell;
+
+}
+
+.jsw {
+    vertical-align: middle;
 }
