@@ -1,8 +1,10 @@
-/*body {*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    overflow: hidden;*/
-/*}*/
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*header*/
 
 .header {
     position: relative;
@@ -15,6 +17,8 @@
     width: 100vw;
 }
 
+/*blue background*/
+
 .header::after {
     content: '';
     position: absolute;
@@ -23,7 +27,7 @@
     right: 0;
     bottom: 0;
     /* Old browsers */
-    background-color: linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));
+    /*background-color: linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));*/
     /* FF3.6-15 */
     background-image: -moz-linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));
     /* Chrome10-25,Safari5.1-6 */
@@ -32,26 +36,24 @@
     background-image: linear-gradient(top, rgba(4,69,87,0.80), rgba(4,30,56,0.80));
     /*z-index: 1;*/
 }
-.header-menu {
-    z-index: 2;
-    margin: 0 auto;
-    /*text-align: center;*/
-    line-height: 110px;
-    color: white;
-}
+
+/*width*/
 
 .header-width {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/*navigation*/
+
 .center-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
-.left-container, .center-container, .right-container, .title-cont {
+nav, .title-cont {
     z-index: 999;
+    color: white;
 }
 
 .anchor {
@@ -62,6 +64,8 @@
     text-align: end;
 }
 
+/*title-container*/
+
 .title-cont {
     color: white;
     height: calc(100vh - 110px);
@@ -71,6 +75,91 @@
 
 }
 
-.jsw {
+.renovation-location-title {
+    padding-bottom: 20px;
+    font-size: 52px;
+    line-height: 1.23;
+    font-weight: 600;
+    font-family: 'Roboto',Arial,sans-serif;
+    letter-spacing: 1px;
+}
+
+.calculate-title {
+    font-weight: 300;
+    font-size: 22px;
+    padding-bottom: 50px;
+    line-height: 1.55;
+    opacity: 0.40;
+}
+
+.title
+
+.our-capabilities {
     vertical-align: middle;
 }
+
+/*buttons*/
+
+.buttons-title-cont {
+    margin-top: 60px;
+}
+
+.button-calculate-price {
+    border: none;
+    z-index: 99;
+    height: 60px;
+    color: #ffffff;
+    background-color: #ff822e;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 0 60px;
+    margin-right: 10px;
+}
+
+.button-services {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: Transparent;
+    height: 60px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 0 60px;
+}
+
+/*Наши Услуги ремонта*/
+
+.all-services {
+    height: 1000px;
+    background-color: #ffffff;
+    padding: 150px 0;
+}
+
+.section-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.title-text-services {
+    margin-bottom: 105px;
+}
+
+.our-services {
+    padding-bottom: 40px;
+    font-size: 38px;
+    line-height: 1.23;
+    font-family: 'Roboto',Arial, sans-serif;
+    font-weight: 900;
+    color: #000;
+}
+
+.our-sevices-description {
+    max-width: 560px;
+    margin: 0 auto;
+    font-family: 'Roboto',Arial, sans-serif;
+    font-weight: 300;
+    color: #000;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
