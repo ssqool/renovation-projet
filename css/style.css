@@ -443,21 +443,39 @@ form {
     /*height: 50px;*/
     display: flex;
     justify-content: space-between;
-    /*position: relative;*/
+    position: relative;
 }
 
 .question {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border: 1px solid black;
     background: #ffffff;
     position: relative;
 }
 
 .question-answer {
+    /*transition: all 0.3s ease 0s;*/
     left: 0;
     top: 100%;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     transition: all 0.3s ease 0s;
+}
+
+.question-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.question-icon:hover {
+    background-color: #ff822e;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
 }
 
 .question-icon.active {
