@@ -9,6 +9,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap">-->
+  <!-- fancyBox3 CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <style>
+      .thumb img {
+          -webkit-filter: grayscale(0);
+          filter: none;
+          border-radius: 5px;
+          border: none;
+          padding: 2px;
+          width: 320px;
+          height: 250px;
+
+      }
+
+      .thumb img:hover {
+          -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+      }
+
+      .thumb {
+          padding: 2px;
+      }
+  </style>
+
+
 </head>
 <body>
 <!--<h1>Renovation</h1>-->
@@ -44,8 +73,6 @@
           </div>
         </nav>
 
-
-
         <div class="title-cont">
           <div class="our-capabilities col-md-8">
             <p class="h1"><h1 class="renovation-location-title">Ремонт помещений в Киеве и области</h1></p>
@@ -53,15 +80,12 @@
             <div class="buttons-title-cont">
               <button href="" class="button-calculate-price">Рассчитать услугу</button>
               <button href="" class="button-services">Услуги</button>
-<!--              <button class="button-services">das</button>-->
             </div>
           </div>
         </div>
       </div>
 
-
-    </div>
-
+  </div>
 
   <div class="all-services">
 
@@ -112,13 +136,271 @@
         </div>
       </div>
     </div>
-    <div class="our-works-container">
-      <div class="our-works-title"><h1>Наши работы</h1></div>
-      <div class="our-works-description">Примеры выполненных работ, которыми гордится наша команда</div>
+
+  </div>
+
+  <div class="our-works-container">
+    <div class="our-works-title"><h1>Наши работы</h1></div>
+    <div class="our-works-description">Примеры выполненных работ, которыми гордится наша команда</div>
+
+    <div class="container gallery-works">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works1.jpg">
+            <img class="img-fluid" src="assets/images/our-works1.jpg" alt="our-works1">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works2.jpg">
+            <img class="img-fluid" src="assets/images/our-works2.jpg" alt="our-works2">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works3.jpg">
+            <img class="img-fluid" src="assets/images/our-works3.jpg" alt="our-works3">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works4.jpg">
+            <img class="img-fluid" src="assets/images/our-works4.jpg" alt="our-works4">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works5.jpg">
+            <img class="img-fluid" src="assets/images/our-works5.jpg" alt="our-works5">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works6.jpg">
+            <img class="img-fluid" src="assets/images/our-works6.jpg" alt="our-works6">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works7.jpg">
+            <img class="img-fluid" src="assets/images/our-works7.jpg" alt="our-works7">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 thumb">
+          <a data-fancybox="gallery" href="assets/images/our-works8.jpg">
+            <img class="img-fluid" src="assets/images/our-works8.jpg" alt="our-works8">
+          </a>
+        </div>
+
+      </div>
+
+
     </div>
   </div>
+
+  <div class="feedback-container">
+    <div class="feedback-title">
+      <h1>Отзывы наших клиентов</h1>
+    </div>
+    <div class="container all-feedbacks">
+      <div class="feedback col-12">
+        <div class="feedback-photo">
+          <img src="assets/images/feedback1.jpg" alt="feedback1">
+        </div>
+        <div class="feedback-description">
+          <div class="feedbacks-name">
+            <h5>Анна Шульц</h5>
+          </div>
+          <div class="feedbacks-text">
+            Спасибо команде строителей за быструю и чистую работу. Вся работа от начала до конца была сделана в точные сроки. Все условия мы обсудили при первой же встрече, не было никаких подводных камней
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback col-12">
+        <div class="feedback-photo">
+          <img src="assets/images/feedback2.jpg" alt="feedback2">
+        </div>
+        <div class="feedback-description">
+          <div class="feedbacks-name">
+            <h5>Вася и Алиса</h5>
+          </div>
+          <div class="feedbacks-text">
+            Отдельное спасибо Олегу и Маше, вы сделали все даже лучше, чем мы представляли себе. Ребята помогли доработать наш дизайн-проект и уложить все по местам.
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback col-12">
+        <div class="feedback-photo">
+          <img src="assets/images/feedback3.jpg" alt="feedback3">
+        </div>
+        <div class="feedback-description">
+          <div class="feedbacks-name">
+            <h5>Дмитрий Эрдоев</h5>
+          </div>
+          <div class="feedbacks-text">
+            Команда рабочих делала ремонт в нашем большом офисе. Все сделали очень быстро, все стадии ремонта были четко обговорены заранее и рассчитаны. Было приятным сюрпризом получить готовый офис на три дня раньше запланированного времени.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-we-container container">
+    <h1>Почему мы вам нравимся?</h1>
+
+    <div class="why-we-paragraphs-container row">
+      <div class="col-lg-4 col-md-12">
+        <div class="paragraph">
+          <div class="paragraph-number">1</div>
+          <div class="paragraph-description">
+            <h6>Цена известна заранее.</h6>
+            <p>Она фиксирована. Мы составляем план и смету в день приезда замерщика.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="paragraph">
+          <div class="paragraph-number">2</div>
+          <div class="paragraph-description">
+            <h6>Дизайн проект</h6>
+            <p>Может быть полностью ваш или доработан после консультацией наших дизайнеров.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="paragraph">
+          <div class="paragraph-number">3</div>
+          <div class="paragraph-description">
+            <h6>Гарантия на ремонт</h6>
+            <p>На все ремонтные работы мы даем официальную гарантию пять лет.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="paragraph">
+          <div class="paragraph-number">4</div>
+          <div class="paragraph-description">
+            <h6>Качественные материалы</h6>
+            <p>Закупку и доставку на нас. Мы работаем с материалами компаний KNAUF, ABB, BIOFA.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="paragraph">
+          <div class="paragraph-number">5</div>
+          <div class="paragraph-description">
+            <h6>Специалисты своего дела</h6>
+            <p>Мы за разделение труда. Над каждым проектом работают специалисты узкого профиля.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="paragraph">
+          <div class="paragraph-number">6</div>
+          <div class="paragraph-description">
+            <h6>Поэтапная оплата</h6>
+            <p>Поэтапная оплата ремонта. Прием работ заказчиком и оплата поделены на 4 части.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="measure">
+    <div class="measure-width container">
+      <h1>Расчет стоимости бесплатно</h1>
+      <p>С вами свяжется наш замерщик и приедет в удобное время. Мы составим расчет в течение 24 часов и свяжемся с вами</p>
+
+      <form action="">
+        <input type="text" placeholder="Имя" class="input">
+        <input type="tel" id="phone" name="phone"
+               pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+               required placeholder="Телефон" class="input">
+        <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required placeholder="e-mail" class="input">
+        <input type="submit" value="Отправить заявку" class="send input">
+      </form>
+    </div>
+  </div>
+
+  <div class="phases">
+    <h1>Из каких этапов состоит ремонт?</h1>
+
+    <div class="all-phases">
+      <div class="stage">
+        <div class="paragraph-number">1</div>
+        <div>
+          <div class="stage-title"><h5>Заявка</h5></div>
+          <div class="stage-description"><p>Вы оставляете заявку на расчет стоимости ремонта и встречаетесь с замерщиком</p></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="paragraph-number">2</div>
+        <div>
+          <div class="stage-title"><h5>Расчет стоимость</h5></div>
+          <div class="stage-description"><p>В этот же день мы производим расчет и высылаем вам договор на подпись</p></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="paragraph-number">3</div>
+        <div>
+          <div class="stage-title"><h5>Строительство</h5></div>
+          <div class="stage-description"><p>На следующий день мы завозим материалы и начинаем работы</p></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="paragraph-number">4</div>
+        <div>
+          <div class="stage-title"><h5>Прием работы</h5></div>
+          <div class="stage-description"><p>Вы принимаете, утверждаете и оплачиваете каждый этап работ</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="important-questions-title">
+    <h1>Самые важные вопросы и ответы на них</h1>
+  </div>
+
+  <div class="important-questions">
+    <div class="important-questions-width">
+      <div class="question">
+        <div class="question-title-icon">
+          <div class="question-title">Сколько стоит вызов замерщика?</div>
+          <div class="question-icon question-icon-1">+</div>
+        </div>
+        <div class="question-answer question-answer-1">Это бесплатная услуга</div>
+      </div>
+      <div class="question">
+        <div class="question-title-icon">
+          <div class="question-title">У вашей компании усть лицензия и реквизиты?</div>
+          <div class="question-icon question-icon-2">+</div>
+        </div>
+        <div class="question-answer question-answer-1">Да, подробнее об этом вы можете узнать в разделе "Лицензия"</div>
+      </div>
+      <div class="question">
+        <div class="question-title-icon">
+          <div class="question-title">Может ли заказчик сам предоставить материалы?</div>
+          <div class="question-icon question-icon-3">+</div>
+        </div>
+        <div class="question-answer question-answer-1">Конечно. Об этом нужно будет сказать замерщику или нашему менеджеру по телефону до начала составления договора</div>
+      </div>
+      <div class="question">
+        <div class="question-title-icon">
+          <div class="question-title">Сколько времени длится ремонт?</div>
+          <div class="question-icon question-icon-4">+</div>
+        </div>
+        <div class="question-answer question-answer-1">Это зависит от типа работ и размера площади. Косметический ремонт средней двухкомнатной квартиры мы производим за три недели</div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
 
 <script src="js/script.js"></script>
 </body>
 </html>
+
+
+</div>
