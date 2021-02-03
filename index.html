@@ -54,20 +54,20 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 center-container col-6">
                 <li class="nav-item">
-                  <a class="nav-link active anchor-services anchor text-white" aria-current="page" href="#">Услуги</a>
+                  <a class="nav-link active anchor-services anchor text-white" aria-current="page" href="#anchor-all-services">Услуги</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active anchor-portfolio anchor text-white" aria-current="page" href="#">Работы</a>
+                  <a class="nav-link active anchor-portfolio anchor text-white" aria-current="page" href="#anchor-our-works-container">Работы</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active anchor-price anchor text-white" aria-current="page" href="#">Цены</a>
+                  <a class="nav-link active anchor-price anchor text-white" aria-current="page" href="#anchor-measure-width">Цены</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active anchor-contacts anchor text-white" aria-current="page" href="#">Контакты</a>
+                  <a class="nav-link active anchor-contacts anchor text-white" aria-current="page" href="#anchor-footer">Контакты</a>
                 </li>
               </ul>
               <span class="navbar-text right-container col-3 text-white">
-                +38(095) 684-12-09
+                <a href="tel:0932575029" class="text-white">+38(095) 684-12-09</a>
               </span>
             </div>
           </div>
@@ -78,8 +78,8 @@
             <p class="h1"><h1 class="renovation-location-title">Ремонт помещений в Киеве и области</h1></p>
             <div class="calculate-title"><small>Рассчитаем стоимость и срок выполнения работ по вашему объекту уже в день обращения. Оставьте заявку сейчас и мы закрепим за Вами персональную скидку</small></div>
             <div class="buttons-title-cont">
-              <button href="" class="button-calculate-price">Рассчитать услугу</button>
-              <button href="" class="button-services">Услуги</button>
+              <button onclick="location.href='#anchor-measure-width'" class="button-calculate-price">Рассчитать услугу</button>
+              <button onclick="location.href='#anchor-all-services'" class="button-services">Услуги</button>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
 
   </div>
 
-  <div class="all-services">
+  <div class="all-services" id="anchor-all-services">
 
     <div class="section-container container">
       <div class="col-12 title-text-services">
@@ -106,7 +106,7 @@
             <div class="image-service-title">Косметический ремонт</div>
             <div class="image-service-price">от 1000 грн/м2</div>
             <div class="image-service-work">Сметчик выезжает на замеры, расчитывает работу и материалы. В этот же день мы обговариваем сроки выполнения работ.</div>
-            <button href="" class="button-calculate-price">Рассчитать услугу</button>
+            <button onclick="location.href='#anchor-measure-width'" class="button-calculate-price">Рассчитать услугу</button>
           </div>
         </div>
 
@@ -119,7 +119,7 @@
             <div class="image-service-title">Капитальный ремонт</div>
             <div class="image-service-price">от 2000 грн/м2</div>
             <div class="image-service-work">Сюда входит бесплатный дизайн проект, работа мастеров и материалы. Расчет всех работ мы произведем в день замеров.</div>
-            <button href="" class="button-calculate-price">Рассчитать услугу</button>
+            <button onclick="location.href='#anchor-measure-width'" class="button-calculate-price">Рассчитать услугу</button>
           </div>
         </div>
         <div class="col-lg-4 service-work">
@@ -131,7 +131,7 @@
             <div class="image-service-title">Индивидуальный ремонт</div>
             <div class="image-service-price">от 5000 грн/м2</div>
             <div class="image-service-work">В услугу входят бесплатные консультации с нашими дизайнерами, замеры помещения, расчет и полный перечень ремонтных работ.</div>
-            <button href="" class="button-calculate-price">Рассчитать услугу</button>
+            <button onclick="location.href='#anchor-measure-width'" class="button-calculate-price">Рассчитать услугу</button>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
 
   </div>
 
-  <div class="our-works-container">
+  <div class="our-works-container" id="anchor-our-works-container">
     <div class="our-works-title"><h1>Наши работы</h1></div>
     <div class="our-works-description">Примеры выполненных работ, которыми гордится наша команда</div>
 
@@ -306,7 +306,7 @@
 
   </div>
 
-  <div class="measure">
+  <div class="measure" id="anchor-measure-width">
     <div class="measure-width container">
       <h1>Расчет стоимости бесплатно</h1>
       <p>С вами свяжется наш замерщик и приедет в удобное время. Мы составим расчет в течение 24 часов и свяжемся с вами</p>
@@ -394,6 +394,38 @@
       </div>
     </div>
   </div>
+
+  <div class="calculate">
+    <div class="calculate-width">
+      <h1>Рассчитайте стоимость ремонта</h1>
+      <p>Мы свяжемся с вами, сделаем замеры, расчеты работ и отправим вам документы на подпись в течение 2-3х дней</p>
+      <button onclick="location.href='#anchor-measure-width'" class="button-calculate-price">Отправить заявку</button>
+    </div>
+  </div>
+
+  <div class="footer" id="anchor-footer">
+    <div class="footer-width">
+      <div class="contacts-and-email">
+        <a href="tel:0932575029">+38 (067) 999-11-22</a> <br>
+        <a href="mailto:skyleba@ukr.net">example@gmail.com</a>
+      </div>
+
+      <div class="ipn">
+        <p>ОГРН: 106470437276</p>
+        <p>ИНН/КПП: 4704069101/470401001</p>
+      </div>
+
+      <div class="address">
+        <p>188800, Ленинградская обл., Выборгский р-н, г. Выборг, б. Кутузова, д. 8.</p>
+      </div>
+
+      <div class="social-links">
+        facebook twitter instagram
+      </div>
+    </div>
+  </div>
+
+  
 
 </div>
 

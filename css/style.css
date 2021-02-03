@@ -428,6 +428,7 @@ form {
 
 .important-questions {
     background-color: #f0f0f0;
+    padding: 15px 0 75px 0;
 }
 
 .important-questions-width {
@@ -447,20 +448,17 @@ form {
 }
 
 .question {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 2px;
     background: #ffffff;
     position: relative;
 }
 
 .question-answer {
-    /*transition: all 0.3s ease 0s;*/
     left: 0;
     top: 0;
     margin: 0 20px 20px 20px;
     /*background-color: #ffffff;*/
-    transition: all 0.3s ease 0s;
+    /*transition: all 0.3s ease 0s;*/
 }
 
 .question-icon {
@@ -487,7 +485,64 @@ form {
     transform: rotate(-45deg);
 }
 
+/*Рассчитайте стоимость*/
 
+
+.calculate {
+    padding: 135px 0;
+    background-color: #ff822e;
+}
+
+.calculate-width {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.calculate-width h1 {
+    margin-bottom: 25px;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.calculate-width p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.calculate-width button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*Footer*/
+
+.footer {
+    padding: 150px 0 90px 0;
+    background-color: #efefef;
+}
+
+.footer-width {
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contacts-and-email {
+    padding-bottom: 50px;
+}
+
+.contacts-and-email a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.23;
+}
 
 
 
@@ -588,7 +643,7 @@ form {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
     .renovation-location-title {
         font-size: 30px;
     }
@@ -600,5 +655,13 @@ form {
         margin-top: 20px;
     }
 
+    .question-title-icon {
+        width: 400px;
+    }
 
+}
+@media (max-width: 450px) {
+    .question-title-icon {
+        width: 250px;
+    }
 }
