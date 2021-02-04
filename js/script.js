@@ -1,4 +1,4 @@
-const icons = document.querySelectorAll('.question-icon');
+const icons = document.querySelectorAll('.question');
 const answers = document.querySelectorAll('.question-answer')
 
 
@@ -20,31 +20,5 @@ for(let i = 0; i < icons.length; i++) {
 
 
 
-function isInteger(num) {
-  return ( num ^ 0 ) === num;
-}
 
-
-function getValueFromMatrix () {
-  let value1 = prompt('Enter the first value');
-  let value2 = prompt('Enter the second value');
-
-  let len = value1.length;
-  let lenSqrt = Math.sqrt(len);
-
-  if ( isInteger(lenSqrt) ) {
-    let matrix = [];
-    for (let i = 0; i < lenSqrt; i++) {
-      matrix[i] = [];
-      for (let j = 0; j < i; j++) {
-        matrix[i][j] = i;
-      }
-    }
-    console.log(matrix)
-  } else {
-    console.error('Error');
-    return 0;
-  }
-
-}
 

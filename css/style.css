@@ -445,6 +445,7 @@ form {
     display: flex;
     justify-content: space-between;
     position: relative;
+    font-weight: 600;
 }
 
 .question {
@@ -456,8 +457,9 @@ form {
 .question-answer {
     left: 0;
     top: 0;
-    margin: 0 20px 20px 20px;
-    /*background-color: #ffffff;*/
+    margin: 0 0 20px 20px;
+    font-size: 12px;
+/*background-color: #ffffff;*/
     /*transition: all 0.3s ease 0s;*/
 }
 
@@ -544,8 +546,13 @@ form {
     line-height: 1.23;
 }
 
+/*fonts*/
 
-
+.icons {
+    font-size: 48px;
+    padding: 50px;
+    color: black;
+}
 
 
 
@@ -655,13 +662,26 @@ form {
         margin-top: 20px;
     }
 
-    .question-title-icon {
+    .question-title-icon, .question-answer {
         width: 400px;
+    }
+
+    .contacts-and-email a {
+        font-size: 30px;
+    }
+
+    .all-phases {
+        padding-left: 15px;
+    }
+
+    .icons {
+        font-size: 40px;
+        padding: 20px;
     }
 
 }
 @media (max-width: 450px) {
-    .question-title-icon {
+    .question-title-icon, .question-answer {
         width: 250px;
     }
 }
