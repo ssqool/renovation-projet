@@ -55,9 +55,14 @@ body {
 
 /*navigation*/
 
-#logo {
-    width: 30px;
-    height: 30px;
+.header img {
+    width: 200px;
+    height: 200px;
+}
+
+.left-container {
+    width: 200px;
+    height: 200px;
 }
 
 .center-container {
@@ -105,8 +110,6 @@ nav, .title-cont {
     line-height: 1.55;
     opacity: 0.40;
 }
-
-.title
 
 .our-capabilities {
     vertical-align: middle;
@@ -317,7 +320,6 @@ nav, .title-cont {
     margin-right: 10px;
     width: 60px;
     height: 60px;
-    font-size: px;
     font-weight: 900;
     border-radius: 50%;
     background-color: #ff822e;
