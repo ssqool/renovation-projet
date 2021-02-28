@@ -87,7 +87,7 @@ nav, .title-cont {
 
 .title-cont {
     color: white;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 300px);
     position: relative;
     display: flex;
     flex-direction: column;
